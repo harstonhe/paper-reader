@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Visual Reader"
+  short_description: "Make bilingual paper reading PDFs"
+  default_prompt: "Create a bilingual visual literature reading PDF from this paper, using the established research-summary layout and the paper's original figures."
