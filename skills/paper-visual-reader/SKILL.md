@@ -126,64 +126,75 @@ Render a full page first, inspect the PNG, then tune `rect`. Keep the crop close
 
 ## Xiaohongshu Post Workflow
 
-After the visual reader is complete, write a Xiaohongshu post for nursing graduate students unless the user only wants the figure/PDF.
+After the visual reader is complete, write a Xiaohongshu post for nursing graduate students unless the user only wants the figure/PDF. Keep the post body within 1000 Chinese characters so it can be pasted into Xiaohongshu. Also output a short Xiaohongshu title before the body.
 
 Use the user's preferred logic:
 
-1. Start with paper identity, not a long opening.
+1. Write a Xiaohongshu title.
+   - Use the pattern: `护理科研 | 文献精读 02 LCA+网络分析`.
+   - Format: `护理科研 | 文献精读 <two-digit number> <method/topic>`.
+   - If the user provides a series number, use it. If there is clear prior numbering in the thread/output, continue it. Otherwise use `01`.
+   - Keep the method/topic short, for example `症状网络分析`, `LCA+网络分析`, `潜在剖面分析`, `护士职业倦怠`, or `癌症症状管理`.
+
+2. Start the body with paper identity, not a long opening.
    - 论文题目
    - 期刊
    - DOI
 
-2. Explain what the paper focuses on in plain nursing-language.
+3. Explain what the paper focuses on in plain nursing-language.
    - Use a short setup like: "这篇文章关注的是..."
    - Compare the paper's framing with common clinical/research habits, for example "以往我们经常会问哪个症状发生率最高、哪个症状最严重", "抑郁水平高不高", or "职业倦怠总分高不高".
    - Move from the usual score/prevalence framing to the paper's added value: not only "how severe/common", but "which symptoms connect problems together".
 
-3. Give the central reminder as a standalone sentence.
+4. Give the central reminder as a standalone sentence.
    - Format as a short punchline.
    - Example pattern: "最严重的症状，不一定是症状网络中最核心的症状。"
 
-4. Summarize design and methods in one compact paragraph.
+5. Summarize design and methods in one compact paragraph.
    - Include sample size, population, key scale/tool, variables/symptoms, and analysis method.
    - Avoid methods-heavy jargon unless it is central for nursing research learning.
 
-5. Present the most interesting finding.
+6. Present the most interesting finding.
    - Use "最有意思的发现是：" before the finding.
    - If listing core symptoms or concepts, put each on its own short line.
    - Preserve English terms next to key Chinese terms when useful, such as "情绪痛苦 distress".
    - For latent class/profile + network papers, first name the identified profiles/classes with percentages if reported, then explain how the network differs across classes.
    - When bridge symptoms are central, frame them as "连接点/桥接症状", not as proven causes.
 
-6. Translate findings into nursing research/practice implications.
+7. Translate findings into nursing research/practice implications.
    - Use the user's tone: "也就是说，从护理干预角度看..."
    - Emphasize how the paper changes symptom assessment, intervention target selection, or research design thinking.
    - For LCA/profile + network papers, explicitly translate the combined method:
      - LCA can answer "人群中有哪些不同类型的人".
      - Network analysis can answer "每一类人群中，哪些症状最关键、最值得干预".
 
-7. Add a paragraph for nursing graduate students.
+8. Add a paragraph for nursing graduate students.
    - Say why the method is useful for symptom management, chronic disease management, cancer rehabilitation, patient-reported outcomes, or nursing research methods.
    - If relevant, note that symptom groups do not have to be studied only by traditional clustering; network analysis can show connection strength, core nodes, and possible intervention paths.
 
-8. Add a limitations/caution paragraph.
+9. Add a limitations/caution paragraph.
    - For cross-sectional studies, explicitly say network relationships cannot be interpreted as causality.
    - Suggest longitudinal data when appropriate.
    - In method-learning posts, add a writing caution when relevant: avoid causal verbs such as "导致", "强化", "改善", "enhance", or "improve" for cross-sectional/correlational network findings; prefer cautious wording such as "相关", "连接更强", "可能提示", "可能是干预入口", "may be associated with", or "may serve as a potential target".
 
-9. End without an over-polished marketing tone.
+10. End without an over-polished marketing tone.
    - Do not force a "一句话总结" if the body already ends cleanly.
    - Keep the post suitable for Xiaohongshu: readable, lightly academic, not too formal.
 
-10. Add targeted tags.
+11. Add targeted tags.
    - Default tags: `#护理研究生 #护理科研 #护理人懂护理人 #护理考研 #症状网络分析 #护理研究方法`
    - Add topic-specific tags only when natural, for example `#肿瘤护理`, `#慢病管理`, `#患者报告结局`.
+   - Count tags inside the 1000-character body limit; use 6-8 tags.
 
 ## Xiaohongshu Post Template
 
 Use this structure as the default:
 
 ```text
+标题：
+护理科研 | 文献精读 <two-digit number> <method/topic>
+
+正文（1000字以内）：
 论文题目：
 <English title>
 
@@ -196,7 +207,7 @@ DOI：<doi>
 
 <核心提醒句。>
 
-研究纳入了 <N> 名<对象>，使用 <scale/tool> 评估 <symptoms/variables>。作者采用 <method>，探索<关系/机制>，并计算<关键指标>。
+研究纳入了 <N> 名<对象>，使用 <scale/tool> 评估 <symptoms/variables>。作者采用 <method>，探索<关系/机制>。
 
 最有意思的发现是：
 
@@ -204,24 +215,16 @@ DOI：<doi>
 
 <术语1 English term>
 <术语2 English term>
-<术语3 English term>
 
 也就是说，从护理干预角度看，我们不能只盯着<传统重点>，还要思考：<研究启发问题1>？<研究启发问题2>？
 
-<进一步解释临床/护理情境中的意义。>
-
 如果论文结合了 LCA/潜在剖面/潜在类别分析和网络分析，加入这一段：
 
-对护理科研来说，这篇文章很值得学习的地方在于，它把 <LCA/潜在剖面/潜在类别分析> 和网络分析结合起来了。
+对护理科研来说，这篇文章很值得学习的地方在于，它把 <LCA/潜在剖面/潜在类别分析> 和网络分析结合起来了。<LCA/潜在类别分析> 回答“人群中有哪些不同类型的人”；网络分析回答“每一类人群中，哪些症状最关键、最值得干预”。
 
-<LCA/潜在类别分析> 可以先回答“人群中有哪些不同类型的人”；
-网络分析可以进一步回答“每一类人群中，哪些症状最关键、最值得干预”。
+对护理研究生来说，这类方法很适合用于<适用研究方向>。它提醒我们，分组不一定只按总分高低，干预靶点也不一定只看平均分最高的变量。
 
-对护理研究生来说，这类方法很适合用于<适用研究方向>。护理研究中的<传统概念>不一定只能用<传统方法>来做。<新方法>可以让我们看到<连接强度/核心节点/潜在干预路径>，非常适合用来拓展<研究主题>的思路。
-
-不过也要注意，这是一项<研究设计>，<不能推断什么>。未来如果能结合<更好的数据/设计>，就可以进一步<未来方向>，也更接近真实的护理干预逻辑。
-
-此类方法在论文撰写中一定要注意避免因果性推断，例如避免把横断面/相关性结果写成“xxx 强化/改善了（enhance/improve）”。尽量使用严谨、谦虚的术语，如“可能提示”“相关”“连接更强”“可能是潜在干预入口”。
+不过也要注意，如果是横断面/相关性研究，不能直接推断因果。写论文时也要避免把结果写成“强化/改善/导致（enhance/improve）”，尽量用“可能提示”“相关”“连接更强”“潜在干预入口”等更谨慎的表达。
 
 #护理研究生 #护理科研 #护理人懂护理人 #护理考研 #症状网络分析 #护理研究方法
 ```
@@ -236,3 +239,5 @@ DOI：<doi>
 - Use exact numeric findings from the paper when they are central to the argument.
 - If original figures are unreadable after fitting, enlarge the figure area or reduce the number of figures rather than replacing them.
 - For Xiaohongshu posts, prioritize clarity and nursing-research relevance over exhaustive detail.
+- For Xiaohongshu posts, keep the body under 1000 Chinese characters, including hashtags. If the first draft is longer, cut background first, then methods detail, then secondary findings; preserve the title, DOI, central reminder, key findings, nursing implication, and causality caution.
+- Always output a Xiaohongshu title separately from the body using `护理科研 | 文献精读 <two-digit number> <method/topic>`.
