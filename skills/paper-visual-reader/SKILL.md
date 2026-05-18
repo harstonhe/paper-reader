@@ -150,38 +150,44 @@ Use the user's preferred logic:
    - Format as a short punchline.
    - Example pattern: "最严重的症状，不一定是症状网络中最核心的症状。"
 
-5. Summarize design and methods in one compact paragraph.
+5. Include journal metrics after the journal/DOI line.
+   - Add `JCR分区：<quartile or 未核实>；IF：<impact factor or 未核实>`.
+   - Journal Citation Reports quartile and Journal Impact Factor change by year. Verify the current or user-requested JCR year before filling them in; do not rely on memory.
+   - If browsing or reliable journal-metric lookup is unavailable, write `JCR分区：未核实；IF：未核实` instead of guessing.
+   - Keep this line short because Xiaohongshu body must remain under 1000 Chinese characters.
+
+6. Summarize design and methods in one compact paragraph.
    - Include sample size, population, key scale/tool, variables/symptoms, and analysis method.
    - Avoid methods-heavy jargon unless it is central for nursing research learning.
 
-6. Present the most interesting finding.
+7. Present the most interesting finding.
    - Use "最有意思的发现是：" before the finding.
    - If listing core symptoms or concepts, put each on its own short line.
    - Preserve English terms next to key Chinese terms when useful, such as "情绪痛苦 distress".
    - For latent class/profile + network papers, first name the identified profiles/classes with percentages if reported, then explain how the network differs across classes.
    - When bridge symptoms are central, frame them as "连接点/桥接症状", not as proven causes.
 
-7. Translate findings into nursing research/practice implications.
+8. Translate findings into nursing research/practice implications.
    - Use the user's tone: "也就是说，从护理干预角度看..."
    - Emphasize how the paper changes symptom assessment, intervention target selection, or research design thinking.
    - For LCA/profile + network papers, explicitly translate the combined method:
      - LCA can answer "人群中有哪些不同类型的人".
      - Network analysis can answer "每一类人群中，哪些症状最关键、最值得干预".
 
-8. Add a paragraph for nursing graduate students.
+9. Add a paragraph for nursing graduate students.
    - Say why the method is useful for symptom management, chronic disease management, cancer rehabilitation, patient-reported outcomes, or nursing research methods.
    - If relevant, note that symptom groups do not have to be studied only by traditional clustering; network analysis can show connection strength, core nodes, and possible intervention paths.
 
-9. Add a limitations/caution paragraph.
+10. Add a limitations/caution paragraph.
    - For cross-sectional studies, explicitly say network relationships cannot be interpreted as causality.
    - Suggest longitudinal data when appropriate.
    - In method-learning posts, add a writing caution when relevant: avoid causal verbs such as "导致", "强化", "改善", "enhance", or "improve" for cross-sectional/correlational network findings; prefer cautious wording such as "相关", "连接更强", "可能提示", "可能是干预入口", "may be associated with", or "may serve as a potential target".
 
-10. End without an over-polished marketing tone.
+11. End without an over-polished marketing tone.
    - Do not force a "一句话总结" if the body already ends cleanly.
    - Keep the post suitable for Xiaohongshu: readable, lightly academic, not too formal.
 
-11. Add targeted tags.
+12. Add targeted tags.
    - Default tags: `#护理研究生 #护理科研 #护理人懂护理人 #护理考研 #症状网络分析 #护理研究方法`
    - Add topic-specific tags only when natural, for example `#肿瘤护理`, `#慢病管理`, `#患者报告结局`.
    - Count tags inside the 1000-character body limit; use 6-8 tags.
@@ -200,6 +206,7 @@ Use this structure as the default:
 
 期刊：<journal>
 DOI：<doi>
+JCR分区：<quartile or 未核实>；IF：<impact factor or 未核实>
 
 这篇文章关注的是<研究对象/问题>。以往我们做<领域>时，经常会问：<常见判断标准1>？<常见判断标准2>？然后优先处理这些问题。
 
@@ -241,3 +248,4 @@ DOI：<doi>
 - For Xiaohongshu posts, prioritize clarity and nursing-research relevance over exhaustive detail.
 - For Xiaohongshu posts, keep the body under 1000 Chinese characters, including hashtags. If the first draft is longer, cut background first, then methods detail, then secondary findings; preserve the title, DOI, central reminder, key findings, nursing implication, and causality caution.
 - Always output a Xiaohongshu title separately from the body using `护理科研 | 文献精读 <two-digit number> <method/topic>`.
+- Include journal JCR quartile and IF in Xiaohongshu posts. Because these values are year-specific and can change, verify them from a reliable current source when generating a real post; if not verified, explicitly write `未核实` rather than inventing values.
